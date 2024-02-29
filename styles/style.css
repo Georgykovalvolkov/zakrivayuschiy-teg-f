@@ -254,9 +254,6 @@
   padding: 0;
   border-style: none;
   background-color: var(--background-color);
-}
-
-.card__icon-button {
   inline-size: 38px;
   block-size: 38px;
   border: 2px solid transparent;
@@ -420,6 +417,7 @@
   line-height: 12.6px;
   z-index: 1;
   mix-blend-mode: difference;
+  align-self: center;
  }
 
 .save__button {
@@ -470,10 +468,6 @@
   color: var(--button-text-color);
 }
 
-.button__text {
-  align-self: center;
-}
-
 dialog::backdrop {
   background-color: rgb(0 0 0 / 0.8);
 }
@@ -482,8 +476,6 @@ dialog[open] {
   display: flex;
   flex-direction: column;
   background-color: var(--background-color);
-  inline-size: 355px;
-  block-size: 193px;
   gap: 30px;
   border: 2px solid var(--accent-color);
   padding: 30px;

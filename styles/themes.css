@@ -64,4 +64,36 @@
   --heart-contour: #00CC14;
   --heart-color: #FF0000;
 	}
+
+  .picture__prepare {
+    filter: brightness(90%);
+  } 
+  
+  .picture__clear {
+    filter: contrast(60%) brightness(120%);
+  }
+  
+  .picture__and_if {
+    filter: blur(3px) brightness(100%);
+  }
+  
+  .picture__chase {
+    filter: opacity(0.7) brightness(200%);
+  }
+  
+  .picture__about {
+    filter: grayscale(0.7);
+  }
+  
+  .picture__strategy {
+    filter: saturate(130%);
+  }
+  
+  .picture__hands {
+    filter: hue-rotate(-20deg) brightness(90%);
+  }
+  
+  .picture__now {
+    filter: sepia(80%) brightness(100%) contrast(100%);
+  }
 }
