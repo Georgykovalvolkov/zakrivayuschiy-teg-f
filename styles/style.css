@@ -89,7 +89,7 @@
   background-color: var(--accent-color);
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 300ms;   
+  transition: transform 300ms;
 }
 
 .theme-menu__button:disabled {
@@ -585,7 +585,7 @@ dialog[open] {
 
   dialog[open] {
     inline-size: 340px;
-    align-items: center;   
+    align-items: center;
   }
 
   .dialog__text-block {
