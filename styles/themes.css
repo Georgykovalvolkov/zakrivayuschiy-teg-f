@@ -5,95 +5,55 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-	--card-title-fw: 700;
-	--card-text-fw: 400;
+  --card-title-font-weight: 700;
+  --card-text-font-weight: 400;
   --background-color: #FFFFFF;
   --accent-color: #000000;
-	--backround-image: repeating-linear-gradient(270deg, #d3d3d3 0px 2px, transparent 2px 4px),
-    repeating-linear-gradient(0deg, #d3d3d3 0px 2px, transparent 2px 4px),
-    linear-gradient(0deg, #1a1a1a, #e7e7e7);
+	--backround-image: repeating-linear-gradient(270deg, #d3d3d3 0px 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #d3d3d3 0px 2px, transparent 2px 4px), linear-gradient(0deg, #1a1a1a, #e7e7e7);
   --main-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
   --shadow-color: #FFFFFF;
   --button-text-color: #FFFFFF;
-  --heart-contour: #000000;
+  --heart-contour: var(--accent-color);
   --heart-color: #FF0000;
 }
 
 :root.theme-dark {
-  --card-title-fw: 785;
-  --card-text-fw: 465;
+  --card-title-font-weight: 785;
+  --card-text-font-weight: 465;
   --background-color: #000000;
   --accent-color: #00CC14;
-	--backround-image: repeating-linear-gradient(270deg, #000 0px 2px, transparent 2px 4px),
-    repeating-linear-gradient(0deg, #000 0px 2px, transparent 2px 4px),
-    linear-gradient(0deg, #004306, #007f0c);
+	--backround-image: repeating-linear-gradient(270deg, #000 0px 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #000 0px 2px, transparent 2px 4px), linear-gradient(0deg, #004306, #007f0c);
   --main-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
   --shadow-color: #000000;
   --button-text-color: #00CC14;
-  --heart-contour: #00CC14;
+  --heart-contour: var(--accent-color);
   --heart-color: #FF0000;
 }
 
 .page.theme-dark {
-  --card-title-fw: 785;
-  --card-text-fw: 465;
+  --card-title-font-weight: 785;
+  --card-text-font-weight: 465;
   --background-color: #000000;
   --accent-color: #00CC14;
-	--backround-image: repeating-linear-gradient(270deg, #000 0px 2px, transparent 2px 4px),
-    repeating-linear-gradient(0deg, #000 0px 2px, transparent 2px 4px),
-    linear-gradient(0deg, #004306, #007f0c);
+	--backround-image: repeating-linear-gradient(270deg, #000 0px 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #000 0px 2px, transparent 2px 4px),linear-gradient(0deg, #004306, #007f0c);
   --main-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
   --shadow-color: #000000;
   --button-text-color: #00CC14;
-  --heart-contour: #00CC14;
+  --heart-contour: var(--accent-color);
   --heart-color: #FF0000;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-		--card-title-fw: 785;
-		--card-text-fw: 465;
-		--background-color: #000000;
-		--accent-color: #00CC14;
-		--backround-image: repeating-linear-gradient(270deg, #000 0px 2px, transparent 2px 4px),
-    repeating-linear-gradient(0deg, #000 0px 2px, transparent 2px 4px),
-    linear-gradient(0deg, #004306, #007f0c);
+	--card-title-font-weight: 785;
+	--card-text-font-weight: 465;
+	--background-color: #000000;
+	--accent-color: #00CC14;
+	--backround-image: repeating-linear-gradient(270deg, #000 0px 2px, transparent 2px 4px), repeating-linear-gradient(0deg, #000 0px 2px, transparent 2px 4px), linear-gradient(0deg, #004306, #007f0c);
   --main-width: clamp(23.438rem, 30.516vw + 16.285rem, 43.75rem);
   --shadow-color: #000000;
   --button-text-color: #00CC14;
-  --heart-contour: #00CC14;
+  --heart-contour: var(--accent-color);
   --heart-color: #FF0000;
 	}
-
-  .picture__prepare {
-    filter: brightness(90%);
-  } 
-  
-  .picture__clear {
-    filter: contrast(60%) brightness(120%);
-  }
-  
-  .picture__and_if {
-    filter: blur(3px) brightness(100%);
-  }
-  
-  .picture__chase {
-    filter: opacity(0.7) brightness(200%);
-  }
-  
-  .picture__about {
-    filter: grayscale(0.7);
-  }
-  
-  .picture__strategy {
-    filter: saturate(130%);
-  }
-  
-  .picture__hands {
-    filter: hue-rotate(-20deg) brightness(90%);
-  }
-  
-  .picture__now {
-    filter: sepia(80%) brightness(100%) contrast(100%);
-  }
 }
